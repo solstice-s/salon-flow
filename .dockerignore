@@ -1,0 +1,39 @@
+# Dependencies (never copy from host — installed fresh in Docker)
+node_modules
+**/node_modules
+.pnpm-store
+
+# Existing build outputs (rebuilt in Docker)
+artifacts/salon-flow/dist
+artifacts/api-server/dist
+artifacts/api-server/.dist
+
+# Replit internals
+.replit
+replit.nix
+.breakpoints
+attached_assets
+mockup-sandbox
+
+# Git
+.git
+.gitignore
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Secrets — never in image
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode
+.idea

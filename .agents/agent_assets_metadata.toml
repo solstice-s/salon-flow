@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Oxra5_nbwz6dmXXpdclQR"
+uri = "file://artifacts/salon-flow/public/hero.jpg"
+type = "image"
+title = "Elegant women's salon interior, warm lighting, modern minimalist, luxury aesthetic"

@@ -1,0 +1,93 @@
+Build a simple salon booking web app called “SalonFlow”.
+
+Use:
+- React + TypeScript + Tailwind for the frontend
+- Node.js + Express for the backend
+- SQLite for the database, so it works on Replit without paid services
+- No Stripe, no SMS, no WhatsApp API, no paid email, no paid APIs
+- Customers pay at the salon
+
+The app should have two sides:
+
+1. Customer side
+Customers can:
+- View salon services
+- Choose a service
+- Choose a staff member or “any available staff”
+- Pick a date and time
+- Enter full name and phone number
+- Add optional notes
+- Submit a booking request
+- See a confirmation page with a booking reference number
+
+Working hours:
+- Saturday to Thursday: 10:00 AM to 9:00 PM
+- Friday: closed
+- Time slots every 30 minutes
+- Do not allow past dates
+- Do not allow duplicate bookings for the same staff, date, and time
+
+Example services:
+- Haircut — 45 min — 120 SAR
+- Hair Styling — 60 min — 180 SAR
+- Hair Coloring — 120 min — 350 SAR
+- Manicure — 45 min — 100 SAR
+- Pedicure — 45 min — 120 SAR
+- Makeup — 90 min — 300 SAR
+
+Example staff:
+- Sara — Hair Stylist
+- Mona — Makeup Artist
+- Layla — Nail Specialist
+
+2. Admin side
+Create a simple admin dashboard.
+
+For the MVP, use a simple admin login:
+- username: admin
+- password: admin123
+
+Admin can:
+- View all bookings
+- Filter bookings by status
+- Update booking status: pending, confirmed, completed, cancelled
+- Add admin notes
+- Add services
+- Edit services
+- Delete services
+- Add staff
+- Edit staff
+- Delete staff
+
+Database tables:
+- services
+- staff
+- bookings
+
+Bookings table fields:
+- id
+- reference_number
+- service_id
+- staff_id
+- customer_name
+- customer_phone
+- customer_notes
+- booking_date
+- booking_time
+- status
+- admin_notes
+- total_price
+- created_at
+
+Design:
+Make it elegant, clean, mobile-friendly, and suitable for a salon.
+Use white, beige, black, and soft gold colors.
+Use rounded cards, clean spacing, and simple forms.
+
+Important:
+Keep the app simple.
+Make sure it runs fully inside Replit.
+Do not use external paid services.
+Do not add complex authentication.
+Do not over-engineer.
+Build a working MVP first.
